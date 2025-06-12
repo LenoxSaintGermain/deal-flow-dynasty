@@ -13,14 +13,14 @@ export const AgentControlPanel = () => {
   const { toast } = useToast();
   const queryClient = useQueryClient();
 
-  // Fetch current analysis run status
+  // Fetch current analysis run status - using 'processing' instead of 'running'
   const { data: currentRun } = useQuery({
     queryKey: ['analysis-runs', 'current'],
     queryFn: async () => {
       const { data, error } = await supabase
         .from('analysis_runs')
         .select('*')
-        .eq('status', 'running')
+        .eq('status', 'processing')
         .order('started_at', { ascending: false })
         .limit(1)
         .single();
@@ -93,7 +93,7 @@ export const AgentControlPanel = () => {
 
   const getStatusBadge = () => {
     if (currentRun) {
-      return <Badge variant="default" className="bg-blue-600">Running</Badge>;
+      return <Badge variant="default" className="bg-blue-600">Processing</Badge>;
     }
     if (lastRun?.status === 'completed') {
       return <Badge variant="secondary">Idle</Badge>;

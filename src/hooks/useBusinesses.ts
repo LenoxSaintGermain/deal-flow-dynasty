@@ -17,7 +17,18 @@ export const useBusinesses = () => {
         throw error;
       }
       
-      return data || [];
+      // Transform the data to match our Business interface
+      const transformedData: Business[] = (data || []).map(business => ({
+        ...business,
+        resilience_factors: Array.isArray(business.resilience_factors) 
+          ? business.resilience_factors as string[]
+          : [],
+        strategic_flags: Array.isArray(business.strategic_flags)
+          ? business.strategic_flags as string[]
+          : [],
+      }));
+      
+      return transformedData;
     },
     refetchInterval: 30000, // Refresh every 30 seconds
   });
