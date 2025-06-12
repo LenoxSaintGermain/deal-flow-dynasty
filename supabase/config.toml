@@ -1,1 +1,5 @@
+
 project_id = "dpghkjmfnbxexdzkvrzi"
+
+[functions.project-million-scanner]
+verify_jwt = false
