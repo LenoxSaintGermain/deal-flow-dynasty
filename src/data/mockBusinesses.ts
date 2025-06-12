@@ -22,7 +22,8 @@ export const mockBusinesses: Business[] = [
     payback_years: 3.3,
     seller_financing: true,
     government_contracts: true,
-    created_at: "2024-06-10"
+    created_at: "2024-06-10",
+    updated_at: "2024-06-10"
   },
   {
     id: "2", 
@@ -44,7 +45,8 @@ export const mockBusinesses: Business[] = [
     payback_years: 3.1,
     seller_financing: false,
     government_contracts: false,
-    created_at: "2024-06-09"
+    created_at: "2024-06-09",
+    updated_at: "2024-06-09"
   },
   {
     id: "3",
@@ -66,7 +68,8 @@ export const mockBusinesses: Business[] = [
     payback_years: 2.7,
     seller_financing: true,
     government_contracts: true,
-    created_at: "2024-06-08"
+    created_at: "2024-06-08",
+    updated_at: "2024-06-08"
   },
   {
     id: "4",
@@ -88,7 +91,8 @@ export const mockBusinesses: Business[] = [
     payback_years: 3.3,
     seller_financing: true,
     government_contracts: false,
-    created_at: "2024-06-11"
+    created_at: "2024-06-11",
+    updated_at: "2024-06-11"
   },
   {
     id: "5",
@@ -110,7 +114,8 @@ export const mockBusinesses: Business[] = [
     payback_years: 3.0,
     seller_financing: true,
     government_contracts: true,
-    created_at: "2024-06-07"
+    created_at: "2024-06-07",
+    updated_at: "2024-06-07"
   },
   {
     id: "6",
@@ -132,7 +137,8 @@ export const mockBusinesses: Business[] = [
     payback_years: 3.1,
     seller_financing: true,
     government_contracts: false,
-    created_at: "2024-06-06"
+    created_at: "2024-06-06",
+    updated_at: "2024-06-06"
   },
   {
     id: "7",
@@ -154,7 +160,8 @@ export const mockBusinesses: Business[] = [
     payback_years: 3.3,
     seller_financing: false,
     government_contracts: true,
-    created_at: "2024-06-05"
+    created_at: "2024-06-05",
+    updated_at: "2024-06-05"
   },
   {
     id: "8",
@@ -176,6 +183,7 @@ export const mockBusinesses: Business[] = [
     payback_years: 3.4,
     seller_financing: true,
     government_contracts: false,
-    created_at: "2024-06-12"
+    created_at: "2024-06-12",
+    updated_at: "2024-06-12"
   }
 ];
