@@ -205,7 +205,7 @@ export const BusinessCard = ({ business }: BusinessCardProps) => {
                 <a href={business.url} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="w-4 h-4" />
                 </a>
-              </a>
+              </Button>
             )}
           </div>
 
