@@ -1,0 +1,13 @@
+status: live
+title: Deal Flow Dynasty
+pitch: Autonomous AI-powered business analysis agent that discovers, evaluates, and creates investor-ready reports for acquisition opportunities using multi-model AI orchestration.
+category: ai
+platform: lovable
+live_url: https://deal-flow-dynasty.lovable.app
+tags:
+  - supabase
+  - ai
+  - edge-functions
+  - multi-model-ai
+  - business-intelligence
+  - automation
